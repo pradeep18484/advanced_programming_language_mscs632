@@ -9,14 +9,33 @@ Schedules employees across 7 days × 3 shifts (Morning, Afternoon, Evening).
 
 ## Run
 
-Enter the number of employees, then each name and their ranked shifts for every day (blank = no preference; the random fill may still assign that day). At least 9 employees are needed to staff every shift. `input.txt` has a ready-made set: `java Scheduler < ../input.txt` or `go run . < ../input.txt`.
+Requires Java 17+ and Go 1.21+. Run these commands from the `assignment_4` folder.
 
+**Java**
 ```bash
-cd java && javac Scheduler.java && java Scheduler
+cd java
+javac Scheduler.java
+java Scheduler
 ```
 
+**Go**
 ```bash
-cd go && go run .
+cd go
+go run .
+```
+
+## Input
+
+1. Enter the number of employees (at least 9 are needed to staff every shift).
+2. For each employee, enter a name, then their shifts for each day in priority order using `M` (Morning), `A` (Afternoon), `E` (Evening). For example, `M E` means Morning first, Evening second.
+3. Leave a day blank for no preference. The random fill may still assign that day.
+
+To skip typing, use the sample input in `input.txt` (run from the `java` or `go` folder):
+```bash
+java Scheduler < ../input.txt
+```
+```bash
+go run . < ../input.txt
 ```
 
 ## Output
