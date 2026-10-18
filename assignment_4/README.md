@@ -18,3 +18,9 @@ cd java && javac Scheduler.java && java Scheduler
 ```bash
 cd go && go run .
 ```
+
+## Output
+
+![Java output](screenshots/java_output.png)
+
+![Go output](screenshots/go_output.png)
